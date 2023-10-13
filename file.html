@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FRONTEND TASK</title>
+  <style>
+    body {
+      background-color: darkblue;
+      font-family: 'Arial';
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px;
+      color: #fff;
+    }
+
+    .left-items a {
+      margin-right: 50px;
+      text-decoration: none;
+      color: #fff;
+      font-size: 20px;
+      margin-left: 60px;
+      padding-left: 40px;
+    }
+
+    .right-items a {
+      text-decoration: none;
+      color: #fff;
+      margin-left: 30px;
+      padding-left: 40px;
+      text-align: center;
+
+    }
+
+    .purchase-button {
+      background-color: #E75480;
+      padding: 2px 3px;
+      border-radius: 8px;
+      justify-content: center;
+
+
+    }
+
+
+    h2 {
+      color: #fff;
+      display: flex;
+      justify-content: left;
+      font-size: 50px;
+      align-items: center;
+      margin-left: 60px;
+    }
+
+    p {
+      color: #fff;
+      font-size: 20px;
+      margin-inline-start: 100px;
+      margin-left: 60px;
+    }
+
+    .right-items {
+      text-align: center;
+    }
+
+    .container {
+      justify-content: center;
+      margin-right: 80px;
+      align-items: center;
+      height: 100vh;
+      width: 100%;
+      display: flex;
+    }
+
+    .learn-more-button {
+      background-color: #E75480;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-size: 16px;
+      margin-left: 52px;
+      border: none;
+
+    }
+
+    .container .form-box {
+      position: absolute;
+      width: 50%;
+      bottom: 0;
+      margin-top: -550px;
+      margin-inline: 550px;
+      flex-direction: column;
+      margin-right: 50px;
+      max-width: 400px;
+      background-color: #fff;
+      border-radius: 20px;
+      padding: 60px 35px;
+    }
+
+    .container .form-box form {
+      margin-block: 30px;
+    }
+    .container .form-box .form input {
+      width: 100%;
+      background-color: white;
+      padding: 18px 16px;
+      outline: none;
+      border-radius: 20px;
+      margin: 12px 0px;
+      border: none;
+      font-size: 16px;
+    }
+
+    .container .form-box .form input a {
+      text-decoration: none;
+    }
+
+    .form-box header h3 {
+      text-align: center;
+      font-size: 30px;
+      color: darkblue;
+      display: flex;
+      justify-content: center;
+    }
+
+    .terms-checkbox {
+      font-family: Arial, sans-serif;
+      margin: 100px;
+
+    }
+
+    .form-box header h1 {
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      font-weight: normal;
+      margin-bottom: 0px;
+    }
+
+    input[type="checkbox"] {
+      margin: 0px;
+      flex-direction: column;
+    }
+
+    input {
+      width: 100px;
+
+    }
+
+    .form-action {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .checkbox-container {
+      margin: 0px;
+      padding-left: -1px;
+      margin-bottom: 0px;
+      padding-left: -2px;
+      font-size: 15px;
+      margin-left: 0px;
+      color: lightseagreen;
+    }
+
+    .centered-line {
+      display: flex;
+      align-items: center;
+    }
+
+    .line {
+      flex: 1px;
+      height: 0.5px;
+      background-color: grey;
+      margin: 0 10px;
+    }
+
+    span {
+      color: grey;
+    }
+
+    h3 {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      padding: 10px 20px;
+      font-size: 15px;
+      border-radius: 8px;
+      color: darkblue;
+    }
+
+    .twitter-login {
+      display: flex;
+      background-color: #1DA1F2;
+      color: #fff;
+      font-size: 14px;
+      margin-inline-end: 6px;
+      margin-right: 12px;
+      padding: 10px 120px;
+      justify-content: center;
+      border-radius: 20px;
+      text-align: center;
+    }
+
+    .signin-button {
+      background-color: blue;
+      color: white;
+      font-size: 14px;
+      display: flex;
+      justify-content: center;
+      padding: 10px 150px;
+      border-radius: 20px;
+      align-items: center;
+    }
+
+    .terms-checkbox {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+
+    }
+
+    .checkbox-container {
+      align-items: center;
+      margin: 0px;
+      padding-left: -1px;
+      margin-bottom: 0px;
+      padding-left: -2px;
+      font-size: 15px;
+      color: lightseagreen;
+
+    }
+
+    input[type="checkbox"] {
+      margin: 0px;
+    }
+
+    input {
+      width: 100px;
+
+    }
+
+    .form-box {
+      width: 50%;
+      max-width: 400px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 20px 28px;
+      margin-inline: 20px;
+    }
+
+    .form-box header h1 {
+      text-align: center;
+      color: #5851e3;
+    }
+
+    .form-box form {
+      margin-block: 30px;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px 6px;
+      border: 1px solid lightgray;
+      border-radius: 45px;
+      background-color: white;
+      font-size: 16px;
+      margin: 10px 0;
+    }
+
+    input[type="text"] {
+      display: none;
+    }
+
+    strong {
+      color: lightseagreen;
+
+    }
+
+    .checkbox {
+      display: flex;
+      align-items: center;
+      padding-bottom: 1rem;
+    }
+
+    .checkbox label {
+      font-size: 12px;
+      margin-left: 5px;
+    }
+
+    .checkbox input[type="checkbox"] {
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="left-items">
+      <a href="#">Startup 3</a>
+    </div>
+    <div class="right-items">
+      <a href="#">Overview</a>
+      <a href="#">Prices</a>
+      <a href="#">Blog</a>
+      <a href="#">Feedback</a>
+      <a href="#" class="purchase-button">Purchase</a>
+    </div>
+  </nav>
+  <h2>Generate<br>Awesome Web<br>Pages</h2>
+  <p> The most important part of the <br> Startup is the samples.The<br>samples form a set of 25 usable <br>pages can
+    use as is or you can <br>add new blocks.</p>
+
+  <button class="learn-more-button">Learn More</button>
+  <div class="sign-up form">
+
+    <form action="#" method="post">
+      <div class="container">
+        <div class="form-box">
+          <div class="terms-checkbox">
+            <header>
+              <h3>Sign Up Now</h3>
+            </header>
+            <form action="">
+              <input type="email" placeholder=" Your Email">
+
+              <input type="password" placeholder="Your password">
+              <div class="checkbox">
+                <input type="checkbox" id="agree-checkbox">
+                <label for="agree-checkbox">I agree to the terms and services</label>
+              </div>
+
+
+
+
+              </label>
+
+              <button class="signin-button">Sign In</button>
+              <div class="centered-line">
+                <div class="line"></div>
+                <span>or</span>
+                <br>
+                <br>
+                <div class="line"></div>
+              </div>
+              <button class="twitter-login">Login via Twitter</button>
+              <br>
+              <div class="signup-prompt">
+                <ul>Already have an account?<strong>Sign in</strong></ul></a>
+
+              </div>
+
+
+              </head>
+</body>
+
+</html>
